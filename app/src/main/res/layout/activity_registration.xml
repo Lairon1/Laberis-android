@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrationActivity">
+
+
+    <TextView
+        android:id="@+id/Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Регистрация"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/user_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Login"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="75dp"
+        android:text="Логин:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/loginET"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/user_text"
+        android:layout_marginLeft="35dp"
+        android:layout_toRightOf="@+id/user_text"
+        android:hint="Логин">
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/password_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_text"
+        android:layout_alignLeft="@+id/user_text"
+        android:layout_marginTop="40dp"
+        android:text="Пароль:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/firstname_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password_text"
+        android:layout_alignLeft="@+id/user_text"
+        android:layout_marginTop="40dp"
+        android:text="Имя:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/firstname_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstname_text2"
+        android:layout_alignLeft="@+id/user_text"
+        android:layout_marginTop="70dp"
+        android:text="Фамилия:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/passwordET"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/loginET"
+        android:layout_alignRight="@+id/loginET"
+        android:layout_alignBottom="@+id/password_text"
+        android:hint="Пароль"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/firstnameET"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordET"
+        android:layout_alignLeft="@+id/loginET"
+        android:layout_alignRight="@+id/loginET"
+        android:layout_marginTop="40dp"
+        android:hint="Имя" />
+
+    <EditText
+        android:id="@+id/lastnameET"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstnameET"
+        android:layout_alignLeft="@+id/loginET"
+        android:layout_alignRight="@+id/loginET"
+        android:layout_marginTop="34dp"
+        android:hint="Фамилия" />
+
+
+    <Button
+        android:id="@+id/button_registration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lastnameET"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="1dp"
+        android:text="Регистрация" />
+
+    <Button
+        android:id="@+id/button_login"
+        style="@style/Widget.MaterialComponents.FloatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_registration"
+        android:layout_alignStart="@+id/button_registration"
+        android:layout_alignEnd="@+id/button_registration"
+        android:layout_marginTop="10dp"
+        android:text="Вход" />
+
+
+    
+</RelativeLayout>
